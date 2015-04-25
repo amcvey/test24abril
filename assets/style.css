@@ -1,0 +1,19 @@
+.cuerpo {
+	height: 100%;
+	width: 100%;
+}
+.titulo, .comentario {
+
+margin: 50px;
+
+}
+#comentarios {
+
+border-color: red;
+
+
+}
+
+#mensaje  {
+
+margin-left: 50px;
