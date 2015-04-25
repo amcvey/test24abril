@@ -2,18 +2,24 @@
 	height: 100%;
 	width: 100%;
 }
-.titulo, .comentario {
-
-margin: 50px;
-
-}
-#comentarios {
-
-border-color: red;
-
-
-}
-
-#mensaje  {
+.titulo  {
 
 margin-left: 50px;
+
+}
+
+
+#comentarios {
+background-color: lightgrey;
+width: 234px;
+height: 100px;
+overflow:scroll;
+margin-left: 50px;
+}
+
+#mensaje {
+
+margin-left:50px;
+
+}
+

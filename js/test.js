@@ -24,4 +24,23 @@ Chat.mostrar = function () { //estamos haciendo una plantilla iterando los arreg
 document.getElementById('comentarios').innerHTML = comentarios;
 }
 
+Chat.guardar = function() {
+	var chat = Chat.chat;
+	var chatEncode = JSON.stringify(chat); // lo transforma en un string por que si no no lo soporta
+	localStorage.setItem('chat', chatEncode); // guardando base de datos local
+}
+
+Chat.obtenerChat = function() {
+	var chatEncode = localStorage.getItem('chat'); //chat encode hace ref a los que estan codificados en string
+	if (chatEncode != null) {
+		var chat = JSON.parse(chatEncode);
+		Chat.chat = chat;
+	}
+	else {
+		var chat = JSON.parse(chatEncode);
+		Chat.chat = [];
+	}
+
+}
+Chat.obtenerChat();
 Chat.mostrar();
