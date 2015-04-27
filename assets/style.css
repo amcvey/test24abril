@@ -15,7 +15,11 @@ width: 234px;
 height: 100px;
 overflow:scroll;
 margin-left: 50px;
+top: -2px;
+
 }
+
+
 
 #mensaje {
 
